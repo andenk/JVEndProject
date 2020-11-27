@@ -1,2 +1,0 @@
-Vi hade möte 27 där vi träffades första gången där vi delade upp klasserna och bestämde att man gör de metoder som finns i de klasserna om någon inte skulle få ihop tillräckligt många metoder så får man ev från någon annan klass.
-har bestämt att att junit testerna ska ske på respektive klass. vilket i mitt fall blir på objectet Contact.java där jag tänkter kolla så att set metoderna inteär null när man skriver till varablerna.
