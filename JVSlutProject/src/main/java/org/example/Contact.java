@@ -1,37 +1,33 @@
 package org.example;
 
 public class Contact {
-private String fname;
-private String ename;
-private int nummber;
+private String name;
 
-    public Contact(String fname, String ename, int nummber) {
-        this.fname = fname;
-        this.ename = ename;
-        this.nummber = nummber;
+private int phoneNumber;
+
+    public Contact(){
+
+    }
+    public Contact(String name, int phoneNumber) {
+        this.name = name;
+
+        this.phoneNumber = phoneNumber;
     }
 
-    public int getNummber() {
-        return nummber;
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setNummber(int nummber) {
-        this.nummber = nummber;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public String getEname() {
-        return ename;
+    public String getName() {
+        return name;
     }
 
-    public void setEname(String ename) {
-        this.ename = ename;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFname() {
-        return fname;
-    }
-
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
 }
