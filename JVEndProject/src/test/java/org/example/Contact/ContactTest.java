@@ -1,9 +1,9 @@
-package org.example;
+package org.example.Contact;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Assert;
+import org.example.Contact.Contact;
 import org.junit.Test;
 
 public class ContactTest {

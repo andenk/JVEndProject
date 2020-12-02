@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Contact;
 
 public class Contact {
 private String name;
