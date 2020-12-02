@@ -9,5 +9,8 @@
         <module name="JVSlutProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JVSlutProject" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
