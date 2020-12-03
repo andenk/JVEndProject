@@ -1,25 +1,35 @@
-package org.example.Crud;
+package org.example.ContactManagement;
 
 
-public class Crud {
+import org.example.Contact.Contact;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ContactManagement {
+
+    private ArrayList<Contact> contactList = new ArrayList();
 
     //add
-    public static void addContact(Contact contact) {
+    public void addContact(Contact contact) {
         contactList.add(contact);
         System.out.println("Contact added");
     }
 
-    //Search
-    public static void searchContact (String searchName){
+    public ArrayList getContactList() {
+        return contactList;
+    }
+
+    //Show all
+    public void printContactList(){
         for(Contact contact : contactList){
-            if(contact.getName().equalsIgnoreCase(searchName)){
-                System.out.println(contact);
-            }
+            System.out.println(contact);
         }
     }
 
-    //Search2
-    public static void searchContact2 (String searchLetter){
+
+    //Search
+    public void searchContact (String searchLetter){
         for(Contact contact : contactList){
             if(contact.getName().startsWith(searchLetter)){
                 System.out.println(contact);
@@ -30,7 +40,7 @@ public class Crud {
     }
 
     //Update name
-    public static void updateName(String oldName, String newName){
+    public void updateName(String oldName, String newName){
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(oldName)){
                 contact.setName(newName);
@@ -39,9 +49,9 @@ public class Crud {
     }
 
     //Update number
-    public static void updatePhoneNumber(String oldName, String newNumber){
+    public void updatePhoneNumber(String name, int newNumber){
         for (Contact contact : contactList){
-            if(contact.getName().equalsIgnoreCase(oldName)){
+            if(contact.getName().equalsIgnoreCase(name)){
                 contact.setPhoneNumber(newNumber);
             }
         }
@@ -49,7 +59,7 @@ public class Crud {
 
 
     //Delete
-    public static void deleteContact(String contactName){
+    public void deleteContact(String contactName){
         for(int i = contactList.size() -1; i>= 0; i--){
             if(contactList.get(i).getName().equalsIgnoreCase(contactName)){
                 contactList.remove(i);
