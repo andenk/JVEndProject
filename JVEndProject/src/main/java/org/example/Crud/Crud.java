@@ -1,12 +1,15 @@
 package org.example.Crud;
 
+import org.example.Contact.Contact;
 
 public class Crud {
 
+    Contact contact = new Contact;
     //add
     public static void addContact(Contact contact) {
         contactList.add(contact);
         System.out.println("Contact added");
+
     }
 
     //Search

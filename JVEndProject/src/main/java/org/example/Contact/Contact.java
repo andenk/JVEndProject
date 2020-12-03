@@ -1,17 +1,16 @@
 package org.example.Contact;
 
 public class Contact {
-    @Override
-private String name;
 
-private int phoneNumber;
+    private String name;
+    private int phoneNumber;
+
 
     public Contact(){
 
     }
     public Contact(String name, int phoneNumber) {
         this.name = name;
-
         this.phoneNumber = phoneNumber;
     }
 
