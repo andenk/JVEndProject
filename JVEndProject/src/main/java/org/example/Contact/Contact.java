@@ -1,16 +1,16 @@
 package org.example.Contact;
 
 public class Contact {
-private String name;
 
-private int phoneNumber;
+    private String name;
+    private int phoneNumber;
+
 
     public Contact(){
 
     }
     public Contact(String name, int phoneNumber) {
         this.name = name;
-
         this.phoneNumber = phoneNumber;
     }
 
@@ -30,5 +30,10 @@ private int phoneNumber;
         this.name = name;
     }
 
+    public String toString() {
+        return "Name '" + name + '\'' +
+                ", PhoneNumber " + phoneNumber;
+    }
 
 }
+

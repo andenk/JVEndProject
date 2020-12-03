@@ -1,6 +1,5 @@
 package org.example.ContactManagement;
 
-
 import org.example.Contact.Contact;
 
 import java.util.ArrayList;
@@ -14,6 +13,7 @@ public class ContactManagement {
     public void addContact(Contact contact) {
         contactList.add(contact);
         System.out.println("Contact added");
+
     }
 
     public ArrayList getContactList() {
