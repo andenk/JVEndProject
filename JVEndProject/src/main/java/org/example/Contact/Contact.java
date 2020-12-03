@@ -1,6 +1,7 @@
 package org.example.Contact;
 
 public class Contact {
+    @Override
 private String name;
 
 private int phoneNumber;
@@ -30,4 +31,9 @@ private int phoneNumber;
         this.name = name;
     }
 
+    public String toString() {
+        return "Name '" + name + '\'' +
+                ", PhoneNumber " + phoneNumber;
+    }
 }
+
