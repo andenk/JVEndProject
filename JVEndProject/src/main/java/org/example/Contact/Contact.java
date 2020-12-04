@@ -3,22 +3,22 @@ package org.example.Contact;
 public class Contact {
 
     private String name;
-    private int phoneNumber;
+    private String phoneNumber;
 
 
     public Contact(){
 
     }
-    public Contact(String name, int phoneNumber) {
+    public Contact(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

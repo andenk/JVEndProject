@@ -49,7 +49,7 @@ public class ContactManagement {
     }
 
     //Update number
-    public void updatePhoneNumber(String name, int newNumber){
+    public void updatePhoneNumber(String name, String newNumber){
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(name)){
                 contact.setPhoneNumber(newNumber);

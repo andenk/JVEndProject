@@ -7,9 +7,9 @@ public class Main {
 
         ContactManagement contactBook = new ContactManagement();
 
-        Contact contact1 = new Contact("Fred", 9584);
-        Contact contact2 = new Contact("George", 5684);
-        Contact contact3 = new Contact("Ginny", 1674);
+        Contact contact1 = new Contact("Fred", "9584");
+        Contact contact2 = new Contact("George", "5684");
+        Contact contact3 = new Contact("Ginny", "1674");
 
 
         contactBook.addContact(contact1);
