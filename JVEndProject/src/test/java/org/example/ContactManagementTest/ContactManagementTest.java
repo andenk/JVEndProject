@@ -21,9 +21,9 @@ public class ContactManagementTest {
         ContactManagement contactList = new ContactManagement();
 
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Harry", 1674);
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
 
         //add contacts
         contactList.addContact(contact1);
@@ -51,10 +51,9 @@ public class ContactManagementTest {
         ContactManagement contactList = new ContactManagement();
 
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Hagrid", 1674);
-
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
         //add contacts
         contactList.addContact(contact1);
         contactList.addContact(contact2);
@@ -73,10 +72,9 @@ public class ContactManagementTest {
 
 
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Hagrid", 1674);
-
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
         //add contacts
         ContactManagement contactList = new ContactManagement();
         contactList.addContact(contact1);
@@ -94,19 +92,18 @@ public class ContactManagementTest {
     @Test
     public void updateNumber_thenVerifyNumberIsUpdated(){
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Hagrid", 1674);
-
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
         //add contacts
         ContactManagement contactList = new ContactManagement();
         contactList.addContact(contact1);
         contactList.addContact(contact2);
         contactList.addContact(contact3);
 
-        contactList.updatePhoneNumber("Harry", 1234);
-        int newPhoneNumber = 1234;
-        int actualPhoneNumber = contact1.getPhoneNumber();
+        contactList.updatePhoneNumber("Harry", "1234");
+        String newPhoneNumber = "1234";
+        String actualPhoneNumber = contact1.getPhoneNumber();
 
         assertEquals(newPhoneNumber, actualPhoneNumber);
     }
@@ -115,10 +112,9 @@ public class ContactManagementTest {
     @Test
     public void searchContact_thenVerifyContactIsShown(){
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Snape", 1674);
-
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
         //add contacts
         ContactManagement contactList = new ContactManagement();
         contactList.addContact(contact1);
@@ -142,10 +138,9 @@ public class ContactManagementTest {
     public void printContactList_VerifyAllContactsArePrinted() {
 
         //Create three contacts
-        Contact contact1 = new Contact("Harry", 9584);
-        Contact contact2 = new Contact("Hedwig", 5684);
-        Contact contact3 = new Contact("Snape", 1674);
-
+        Contact contact1 = new Contact("Harry", "9584");
+        Contact contact2 = new Contact("Hedwig", "5684");
+        Contact contact3 = new Contact("Harry", "1674");
         //add contacts
         ContactManagement contactList = new ContactManagement();
         contactList.addContact(contact1);
