@@ -6,6 +6,12 @@ import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.io.IOException; // Import the IOException class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
 
+/**
+ * Filen ska lösa från txt
+ * läsa från array
+ * skriv till arrayen
+ *
+ */
 public class java_Read_File {
     public static void main(String[] args){
     

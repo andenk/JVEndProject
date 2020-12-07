@@ -3,6 +3,12 @@ package org.example.Main;
 /**
  *This is leone turf
  **/
+/**
+ * Förklaring på vad som ska matas in
+ * scanna in från parametrar från tangenbordet
+ * metoder
+ * ContactManagement.metodnamn
+ */
 
 import java.util.Scanner;
 
@@ -59,6 +65,7 @@ public class App
                     System.out.println("Prova igen");
             }
         }
+
     }
 
 }

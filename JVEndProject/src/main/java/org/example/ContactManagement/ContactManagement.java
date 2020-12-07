@@ -5,6 +5,11 @@ import org.example.Contact.Contact;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Static array
+ * Ta in parametrar och skapa objektet contact här
+ */
 public class ContactManagement {
 
     private ArrayList<Contact> contactList = new ArrayList();
