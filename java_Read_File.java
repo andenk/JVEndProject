@@ -26,6 +26,7 @@ public class java_Read_File {
     //Writes in the created text file
     try{
         FileWriter myWriter = new FileWriter("readMe.txt");
+        myWriter.write("Files in Java might be tricky, but as long as it works");
         System.out.println("Successfully wrote to the file.");
         myWriter.close();
     }catch (IOException e) {
