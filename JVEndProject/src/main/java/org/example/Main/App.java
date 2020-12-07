@@ -13,6 +13,8 @@ public class App
         boolean run = true;
         Scanner myObj = new Scanner(System.in);
 
+        System.out.println("testtest");
+
         System.out.println(
                 "1: Visa kontakter\n" +
                         "2: Sök bland kontakter\n" +
