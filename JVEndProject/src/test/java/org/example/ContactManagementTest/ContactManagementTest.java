@@ -18,7 +18,6 @@ public class ContactManagementTest {
 
     public void addContacts_thenVerifyContactsAreAdded() {
 
-        ContactManagement contactList = new ContactManagement();
 
         //Create three contacts
         Contact contact1 = new Contact("Harry", "9584");
@@ -26,9 +25,9 @@ public class ContactManagementTest {
         Contact contact3 = new Contact("Harry", "1674");
 
         //add contacts
-        contactList.addContact(contact1);
-        contactList.addContact(contact2);
-        contactList.addContact(contact3);
+        ContactManagement.addContact(contact1);
+        ContactManagement.addContact(contact2);
+        ContactManagement.addContact(contact3);
 
         //add contacts to local list
         List<Contact> addedContacts = new ArrayList<>();
@@ -37,7 +36,7 @@ public class ContactManagementTest {
         addedContacts.add(contact3);
 
 
-        List<Contact> foundContacts = contactList.getContactList();
+        List<Contact> foundContacts = ContactManagement.getContactList();
 
         assertEquals(addedContacts, foundContacts);
 
@@ -48,20 +47,18 @@ public class ContactManagementTest {
     @Test
     public void deleteContact_thenVerifyContactIsDeleted() {
 
-        ContactManagement contactList = new ContactManagement();
-
         //Create three contacts
         Contact contact1 = new Contact("Harry", "9584");
         Contact contact2 = new Contact("Hedwig", "5684");
         Contact contact3 = new Contact("Harry", "1674");
         //add contacts
-        contactList.addContact(contact1);
-        contactList.addContact(contact2);
-        contactList.addContact(contact3);
+        ContactManagement.addContact(contact1);
+        ContactManagement.addContact(contact3);
+        ContactManagement.addContact(contact2);
 
-        contactList.deleteContact(contact1.getName());
+        ContactManagement.deleteContact(contact1.getName());
 
-        List<Contact> foundContacts = contactList.getContactList();
+        List<Contact> foundContacts = ContactManagement.getContactList();
 
         assertEquals(2, foundContacts.size());
 

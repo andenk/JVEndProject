@@ -23,12 +23,12 @@ public class Main {
         System.out.println();
 
 
-        contactBook.searchContact("G");
+        contactBook.searchContact("gI");
 
         System.out.println();
 
         contactBook.updateName("Fred", "Bill");
-        contactBook.updatePhoneNumber("Ginny", 1234);
+        contactBook.updatePhoneNumber("Ginny", "1234");
 
         contactBook.printContactList();
         System.out.println();
