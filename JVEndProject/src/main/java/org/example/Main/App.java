@@ -32,20 +32,20 @@ public class App
                     run = false;
                     break;
                 case 1:
-                    //listContactsMethod();
-                    System.out.println("listContactsMethod();");
+                    //printContactList();
+                    System.out.println("printContactList();");
                     break;
                 case 2:
-                    //searchContactsMethod();
-                    System.out.println("searchContactsMethod();");
+                    //searchContact();
+                    System.out.println("searchContact();");
                     break;
                 case 3:
-                    //addContactMethod();
-                    System.out.println("addContactMethod();");
+                    //addContact();
+                    System.out.println("addContact();");
                     break;
                 case 4:
-                    //removeContactMethod();
-                    System.out.println("removeContactMethod();");
+                    //deleteContact();
+                    System.out.println("deleteContact();");
                     break;
                 case 5:
                     //updatePhoneNumber
