@@ -5,36 +5,30 @@ import org.example.Contact.Contact;
 public class Main {
     public static void main(String[] args) {
 
-        ContactManagement contactBook = new ContactManagement();
 
-        Contact contact1 = new Contact("Fred", "9584");
-        Contact contact2 = new Contact("George", "5684");
-        Contact contact3 = new Contact("Ginny", "1674");
-
-
-        contactBook.addContact(contact1);
-        contactBook.addContact(contact2);
-        contactBook.addContact(contact3);
+        ContactManagement.addContact("Fred", "9584");
+        ContactManagement.addContact("George", "5684");
+        ContactManagement.addContact("Ginny", "1674");
 
         System.out.println();
 
-        contactBook.printContactList();
+        ContactManagement.printContactList();
 
         System.out.println();
 
 
-        contactBook.searchContact("gI");
+        ContactManagement.searchContact("gI");
 
         System.out.println();
 
-        contactBook.updateName("Fred", "Bill");
-        contactBook.updatePhoneNumber("Ginny", "1234");
+        ContactManagement.updateName("Fred", "Bill");
+        ContactManagement.updatePhoneNumber("Ginny", "1234");
 
-        contactBook.printContactList();
+        ContactManagement.printContactList();
         System.out.println();
-        contactBook.deleteContact("Bill");
+        ContactManagement.deleteContact("Bill");
 
-        contactBook.printContactList();
+        ContactManagement.printContactList();
 
 
 

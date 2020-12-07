@@ -15,7 +15,9 @@ public class ContactManagement {
     private static ArrayList<Contact> contactList = new ArrayList();
 
     //add
-    public static void addContact(Contact contact) {
+    public static void addContact(String name, String PhoneNumber) {
+
+        Contact contact = new Contact(name, PhoneNumber);
         contactList.add(contact);
         System.out.println("Contact added");
 
@@ -39,9 +41,7 @@ public class ContactManagement {
             if(contact.getName().toLowerCase().startsWith(searchLetter.toLowerCase())){
                 System.out.println(contact);
             }
-
         }
-
     }
 
     //Update name
