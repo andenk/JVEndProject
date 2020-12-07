@@ -20,6 +20,8 @@ public class App
                         "2: Sök bland kontakter\n" +
                         "3: Lägg till kontakt\n" +
                         "4: Ta bort kontakt\n" +
+                        "5: Uppdatera nummer\n" +
+                        "6: Uppdatera namn\n" +
                         "0: Avsuta\n");
 
         while(run) {
@@ -44,6 +46,14 @@ public class App
                 case 4:
                     //removeContactMethod();
                     System.out.println("removeContactMethod();");
+                    break;
+                case 5:
+                    //updatePhoneNumber
+                    System.out.println("updatePhoneNumber();");
+                    break;
+                case 6:
+                    //updateName
+                    System.out.println("updateName();");
                     break;
                 default:
                     System.out.println("Prova igen");
