@@ -18,7 +18,7 @@ public class ContactTest {
     Contact contact1 = new Contact("David", "070");
 
     @Test
-    public void setName()
+    public void TestSetName()
     {
         contact1.setName("Erik");
         assertEquals("Erik",contact1.getName());
@@ -26,19 +26,19 @@ public class ContactTest {
 
     }
     @Test
-    public void setPhoneNumber(){
+    public void TestSetPhoneNumber(){
         contact1.setPhoneNumber("073");
         assertEquals("073",contact1.getPhoneNumber());
         assertNotEquals("070",contact1.getPhoneNumber());
 }
 
     @Test
-    public void getPhoneNumber() {
+    public void TestGetPhoneNumber() {
         assertEquals("070",contact1.getPhoneNumber());
     }
 
     @Test
-    public void getName() {
+    public void TestGetName() {
         assertEquals("David",contact1.getName());
 
     }
