@@ -84,7 +84,7 @@ public class ContactManagementTest {
         assertEquals(newName, outContent.toString());
 
     }
-
+/*
     @Test
     public void updateNumber_thenVerifyNumberIsUpdated(){
 
@@ -156,6 +156,6 @@ public class ContactManagementTest {
     }
 
 
-
+*/
 
 }
