@@ -96,7 +96,7 @@ public class ContactManagementTest {
         contactList.addContact("Snape", "1674");
 
         contactList.updatePhoneNumber("Harry", "1234");
-        String newPhoneNumber = "1234\n";
+        String newPhoneNumber = "1234"+System.getProperty("line.separator");
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
