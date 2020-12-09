@@ -12,10 +12,10 @@ import java.util.List;
  */
 public class ContactManagement {
 
-    private static ArrayList<Contact> contactList = new ArrayList();
+    private ArrayList<Contact> contactList = new ArrayList();
 
     //add
-    public static void addContact(String name, String phoneNumber) {
+    public void addContact(String name, String phoneNumber) {
 
         Contact contact = new Contact(name, phoneNumber);
         contactList.add(contact);
@@ -23,19 +23,19 @@ public class ContactManagement {
 
     }
 
-    public static ArrayList getContactList() {
+    public ArrayList getContactList() {
 
         return contactList;
     }
 
-    public static void getPhoneNumber(String name){
+    public void getPhoneNumber(String name){
         for(Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(name))
                 System.out.println(contact.getPhoneNumber());
         }
     }
 
-    public static void getName(String phoneNumber){
+    public void getName(String phoneNumber){
         for(Contact contact : contactList){
             if(contact.getPhoneNumber().equalsIgnoreCase(phoneNumber))
                 System.out.println(contact.getName());
@@ -44,7 +44,7 @@ public class ContactManagement {
 
 
     //Show all
-    public static void printContactList(){
+    public void printContactList(){
         for(Contact contact : contactList){
             System.out.println(contact);
         }
@@ -52,7 +52,7 @@ public class ContactManagement {
 
 
     //Search
-    public static void searchContact (String searchLetter){
+    public void searchContact (String searchLetter){
         for(Contact contact : contactList){
             if(contact.getName().toLowerCase().startsWith(searchLetter.toLowerCase())){
                 System.out.println(contact);
@@ -61,7 +61,7 @@ public class ContactManagement {
     }
 
     //Update name
-    public static void updateName(String oldName, String newName){
+    public void updateName(String oldName, String newName){
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(oldName)){
                 contact.setName(newName);
@@ -70,7 +70,7 @@ public class ContactManagement {
     }
 
     //Update number
-    public static void updatePhoneNumber(String name, String newNumber){
+    public void updatePhoneNumber(String name, String newNumber){
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(name)){
                 contact.setPhoneNumber(newNumber);
@@ -80,7 +80,7 @@ public class ContactManagement {
 
 
     //Delete
-    public static void deleteContact(String contactName){
+    public void deleteContact(String contactName){
         for(int i = contactList.size() -1; i>= 0; i--){
             if(contactList.get(i).getName().equalsIgnoreCase(contactName)){
                 contactList.remove(i);

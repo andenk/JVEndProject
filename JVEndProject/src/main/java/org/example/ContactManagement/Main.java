@@ -5,30 +5,31 @@ import org.example.Contact.Contact;
 public class Main {
     public static void main(String[] args) {
 
+        ContactManagement contactList = new ContactManagement();
 
-        ContactManagement.addContact("Fred", "9584");
-        ContactManagement.addContact("George", "5684");
-        ContactManagement.addContact("Ginny", "1674");
-
-        System.out.println();
-
-        ContactManagement.printContactList();
+        contactList.addContact("Fred", "9584");
+        contactList.addContact("George", "5684");
+        contactList.addContact("Ginny", "1674");
 
         System.out.println();
 
-
-        ContactManagement.searchContact("gI");
+        contactList.printContactList();
 
         System.out.println();
 
-        ContactManagement.updateName("Fred", "Bill");
-        ContactManagement.updatePhoneNumber("Ginny", "1234");
 
-        ContactManagement.printContactList();
+        contactList.searchContact("gI");
+
         System.out.println();
-        ContactManagement.deleteContact("Bill");
 
-        ContactManagement.printContactList();
+        contactList.updateName("Fred", "Bill");
+        contactList.updatePhoneNumber("Ginny", "1234");
+
+        contactList.printContactList();
+        System.out.println();
+        contactList.deleteContact("Bill");
+
+        contactList.printContactList();
 
 
 

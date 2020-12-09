@@ -17,11 +17,12 @@ public class ContactManagementTest {
     @Test
 
     public void addContacts_thenVerifyContactsAreAdded() {
+        ContactManagement contactList = new ContactManagement();
 
         //add three contacts
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
         //Create three contacts
         Contact contact1 = new Contact("Harry", "9584");
@@ -35,11 +36,9 @@ public class ContactManagementTest {
         addedContacts.add(contact3);
 
 
-        List<Contact> foundContacts = ContactManagement.getContactList();
+        List<Contact> foundContacts = contactList.getContactList();
 
-        assertEquals(addedContacts.size(), foundContacts.size());
-
-
+        assertEquals(addedContacts, foundContacts);
 
     }
 
@@ -47,14 +46,16 @@ public class ContactManagementTest {
     @Test
     public void deleteContact_thenVerifyContactIsDeleted() {
 
+        ContactManagement contactList = new ContactManagement();
+
         //add contacts
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
-        ContactManagement.deleteContact("Snape");
+        contactList.deleteContact("Snape");
 
-        List<Contact> foundContacts = ContactManagement.getContactList();
+        List<Contact> foundContacts = contactList.getContactList();
 
         assertEquals(2, foundContacts.size());
 
@@ -63,23 +64,22 @@ public class ContactManagementTest {
     @Test
     public void updateName_thenVerifyNameIsUpdated(){
 
-        //Create three contacts
-        Contact contact1 = new Contact("Harry", "9584");
+        ContactManagement contactList = new ContactManagement();
 
         //add contacts
 
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
-        ContactManagement.updateName("Harry", "Ron");
+        contactList.updateName("Harry", "Ron");
         String newName = "Ron\r\n";
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
         //actual name
-        ContactManagement.getName("9584");
+        contactList.getName("9584");
 
         assertEquals(newName, outContent.toString());
 
@@ -87,22 +87,22 @@ public class ContactManagementTest {
 
     @Test
     public void updateNumber_thenVerifyNumberIsUpdated(){
-        //Create three contacts
-        Contact contact1 = new Contact("Harry", "9584");
+
+        ContactManagement contactList = new ContactManagement();
 
         //add contacts
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
-        ContactManagement.updatePhoneNumber("Harry", "1234");
+        contactList.updatePhoneNumber("Harry", "1234");
         String newPhoneNumber = "1234\r\n";
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
         //actualPhoneNumber;
-        ContactManagement.getPhoneNumber("Harry");
+        contactList.getPhoneNumber("Harry");
 
         assertEquals(newPhoneNumber, outContent.toString());
     }
@@ -111,16 +111,18 @@ public class ContactManagementTest {
     @Test
     public void searchContact_thenVerifyContactIsShown(){
 
+        ContactManagement contactList = new ContactManagement();
+
         //add contacts
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        ContactManagement.searchContact("H");
+        contactList.searchContact("H");
 
         String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\n";
 
@@ -132,17 +134,19 @@ public class ContactManagementTest {
     @Test
     public void printContactList_VerifyAllContactsArePrinted() {
 
+        ContactManagement contactList = new ContactManagement();
+
         //add contacts
-        ContactManagement.addContact("Harry", "9584");
-        ContactManagement.addContact("Hedwig", "5684");
-        ContactManagement.addContact("Snape", "1674");
+        contactList.addContact("Harry", "9584");
+        contactList.addContact("Hedwig", "5684");
+        contactList.addContact("Snape", "1674");
 
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         // After this all System.out.println() statements will come to outContent stream.
 
-        ContactManagement.printContactList();
+        contactList.printContactList();
 
         //Validate the output with expected String
         String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\nName 'Snape', PhoneNumber 1674\r\n";
