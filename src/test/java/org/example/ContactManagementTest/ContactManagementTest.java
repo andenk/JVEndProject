@@ -124,7 +124,7 @@ public class ContactManagementTest {
 
         contactList.searchContact("H");
 
-        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\n";
 
         assertEquals(expectedOutput, outContent.toString());
 
@@ -149,7 +149,7 @@ public class ContactManagementTest {
         contactList.printContactList();
 
         //Validate the output with expected String
-        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\nName 'Snape', PhoneNumber 1674";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\nName 'Snape', PhoneNumber 1674\r\n";
 
         // Do the actual assertion.
         assertEquals(expectedOutput, outContent.toString());
