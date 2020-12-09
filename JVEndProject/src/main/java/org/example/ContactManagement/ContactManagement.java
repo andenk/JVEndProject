@@ -27,6 +27,22 @@ public class ContactManagement {
         return contactList;
     }
 
+    public static void getPhoneNumber(String name){
+        for(Contact contact : contactList){
+            if(contact.getName().equalsIgnoreCase(name))
+                System.out.println(contact.getPhoneNumber());
+        }
+    }
+
+    public static void getName(String phoneNumber){
+        for(Contact contact : contactList){
+            if(contact.getPhoneNumber().equalsIgnoreCase(phoneNumber))
+                System.out.println(contact.getName());
+        }
+    }
+
+
+
     //Show all
     public static void printContactList(){
         for(Contact contact : contactList){

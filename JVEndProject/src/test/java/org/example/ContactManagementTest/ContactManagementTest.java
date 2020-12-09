@@ -47,7 +47,6 @@ public class ContactManagementTest {
     @Test
     public void deleteContact_thenVerifyContactIsDeleted() {
 
-
         //add contacts
         ContactManagement.addContact("Harry", "9584");
         ContactManagement.addContact("Hedwig", "5684");
@@ -64,7 +63,6 @@ public class ContactManagementTest {
     @Test
     public void updateName_thenVerifyNameIsUpdated(){
 
-
         //Create three contacts
         Contact contact1 = new Contact("Harry", "9584");
 
@@ -75,10 +73,15 @@ public class ContactManagementTest {
         ContactManagement.addContact("Snape", "1674");
 
         ContactManagement.updateName("Harry", "Ron");
-        String newName = "Ron";
-        String actualName = contact1.getName();
+        String newName = "Ron\r\n";
 
-        assertEquals(newName, actualName);
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        //actual name
+        ContactManagement.getName("9584");
+
+        assertEquals(newName, outContent.toString());
 
     }
 
@@ -87,18 +90,21 @@ public class ContactManagementTest {
         //Create three contacts
         Contact contact1 = new Contact("Harry", "9584");
 
-
-
         //add contacts
         ContactManagement.addContact("Harry", "9584");
         ContactManagement.addContact("Hedwig", "5684");
         ContactManagement.addContact("Snape", "1674");
 
         ContactManagement.updatePhoneNumber("Harry", "1234");
-        String newPhoneNumber = "1234";
-        String actualPhoneNumber = contact1.getPhoneNumber();
+        String newPhoneNumber = "1234\r\n";
 
-        assertEquals(newPhoneNumber, actualPhoneNumber);
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+
+        //actualPhoneNumber;
+        ContactManagement.getPhoneNumber("Harry");
+
+        assertEquals(newPhoneNumber, outContent.toString());
     }
 
 
@@ -116,7 +122,7 @@ public class ContactManagementTest {
 
         ContactManagement.searchContact("H");
 
-        String expectedOutput  = "Contact{name='Harry', phoneNumber=9584}\r\nContact{name='Hedwig', phoneNumber=5684}\r\n";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\n";
 
         assertEquals(expectedOutput, outContent.toString());
 
@@ -139,7 +145,7 @@ public class ContactManagementTest {
         ContactManagement.printContactList();
 
         //Validate the output with expected String
-        String expectedOutput  = "Contact{name='Harry', phoneNumber=9584}\r\nContact{name='Hedwig', phoneNumber=5684}\r\nContact{name='Snape', phoneNumber=1674}\r\n";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\nName 'Snape', PhoneNumber 1674\r\n";
 
         // Do the actual assertion.
         assertEquals(expectedOutput, outContent.toString());
