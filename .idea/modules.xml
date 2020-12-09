@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JVEndProject.iml" filepath="$PROJECT_DIR$/.idea/JVEndProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JVEndProject/JVSlutProject.iml" filepath="$PROJECT_DIR$/JVEndProject/JVSlutProject.iml" />
     </modules>
   </component>
 </project>
