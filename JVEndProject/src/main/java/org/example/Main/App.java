@@ -3,23 +3,29 @@ package org.example.Main;
 /**
  *This is leone turf
  **/
+
 /**
  * Förklaring på vad som ska matas in
  * scanna in från parametrar från tangenbordet
  * metoder
  * ContactManagement.metodnamn
- */
+ **/
+
+import org.example.ContactManagement.ContactManagement;
 
 import java.util.Scanner;
 
 public class App
 {
+
+    private static Scanner scanner = new Scanner(System.in);
+    static ContactManagement contactList = new ContactManagement();
+
     public static void main(String[] args) {
 
         boolean run = true;
         Scanner myObj = new Scanner(System.in);
 
-        System.out.println("testtest");
 
         System.out.println(
                 "1: Visa kontakter\n" +
@@ -38,28 +44,22 @@ public class App
                     run = false;
                     break;
                 case 1:
-                    //printContactList();
-                    System.out.println("printContactList();");
+                    contactList.printContactList();
                     break;
                 case 2:
-                    //searchContact();
-                    System.out.println("searchContact();");
+                    searchContacts();
                     break;
                 case 3:
-                    //addContact();
-                    System.out.println("addContact();");
+                    addNewContact();
                     break;
                 case 4:
-                    //deleteContact();
-                    System.out.println("deleteContact();");
+                    deleteContact();
                     break;
                 case 5:
-                    //updatePhoneNumber
-                    System.out.println("updatePhoneNumber();");
+                    updateNumber();
                     break;
                 case 6:
-                    //updateName
-                    System.out.println("updateName();");
+                    updateName();
                     break;
                 default:
                     System.out.println("Prova igen");
@@ -67,5 +67,49 @@ public class App
         }
 
     }
+
+    private static void searchContacts(){
+        System.out.print("Input search: ");
+        String search = scanner.nextLine();
+        contactList.searchContact(search);
+    }
+
+    private static void addNewContact(){
+        System.out.print("Input name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Input Phonenumber: ");
+        String number = scanner.nextLine();
+
+        contactList.addContact(name, number);
+    }
+
+    private static void deleteContact(){
+        System.out.print("Input name: ");
+        String name = scanner.nextLine();
+
+        contactList.deleteContact(name);
+    }
+
+    private static void updateNumber(){
+        System.out.print("Input name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Input new phonenumber: ");
+        String phoneNumber = scanner.nextLine();
+
+        contactList.updatePhoneNumber(name, phoneNumber);
+    }
+
+    private static void updateName(){
+        System.out.print("Input current name: ");
+        String oldName = scanner.nextLine();
+
+        System.out.print("Input new name: ");
+        String newName = scanner.nextLine();
+
+        contactList.updateName(oldName, newName);
+    }
+
 
 }
