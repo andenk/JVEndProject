@@ -73,7 +73,7 @@ public class ContactManagementTest {
         contactList.addContact("Snape", "1674");
 
         contactList.updateName("Harry", "Ron");
-        String newName = "Ron\r\n";
+        String newName = "Ron\n";
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -96,7 +96,7 @@ public class ContactManagementTest {
         contactList.addContact("Snape", "1674");
 
         contactList.updatePhoneNumber("Harry", "1234");
-        String newPhoneNumber = "1234\r\n";
+        String newPhoneNumber = "1234\n";
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -124,7 +124,7 @@ public class ContactManagementTest {
 
         contactList.searchContact("H");
 
-        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\r\nName 'Hedwig', PhoneNumber 5684\r\n";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\nName 'Hedwig', PhoneNumber 5684\n";
 
         assertEquals(expectedOutput, outContent.toString());
 
