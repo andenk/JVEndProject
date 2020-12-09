@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Branch
-=======
-BranchA
->>>>>>> branchAndreas
+last commit
