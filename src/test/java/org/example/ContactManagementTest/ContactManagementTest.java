@@ -73,7 +73,7 @@ public class ContactManagementTest {
         contactList.addContact("Snape", "1674");
 
         contactList.updateName("Harry", "Ron");
-        String newName = "Ron\n";
+        String newName = "Ron"+ System.getProperty("line.separator");
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -96,7 +96,7 @@ public class ContactManagementTest {
         contactList.addContact("Snape", "1674");
 
         contactList.updatePhoneNumber("Harry", "1234");
-        String newPhoneNumber = "1234\n";
+        String newPhoneNumber = "1234"+ System.getProperty("line.separator");
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
@@ -124,7 +124,7 @@ public class ContactManagementTest {
 
         contactList.searchContact("H");
 
-        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\nName 'Hedwig', PhoneNumber 5684\n";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584"+ System.getProperty("line.separator")+"Name 'Hedwig', PhoneNumber 5684"+ System.getProperty("line.separator");
 
         assertEquals(expectedOutput, outContent.toString());
 
@@ -149,7 +149,7 @@ public class ContactManagementTest {
         contactList.printContactList();
 
         //Validate the output with expected String
-        String expectedOutput  = "Name 'Harry', PhoneNumber 9584\nName 'Hedwig', PhoneNumber 5684\nName 'Snape', PhoneNumber 1674\n";
+        String expectedOutput  = "Name 'Harry', PhoneNumber 9584"+ System.getProperty("line.separator")+"Name 'Hedwig', PhoneNumber 5684"+ System.getProperty("line.separator")+"Name 'Snape', PhoneNumber 1674"+System.getProperty("line.separator");
 
         // Do the actual assertion.
         assertEquals(expectedOutput, outContent.toString());
