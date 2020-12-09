@@ -15,15 +15,16 @@ public class ContactManagement {
     private static ArrayList<Contact> contactList = new ArrayList();
 
     //add
-    public static void addContact(String name, String PhoneNumber) {
+    public static void addContact(String name, String phoneNumber) {
 
-        Contact contact = new Contact(name, PhoneNumber);
+        Contact contact = new Contact(name, phoneNumber);
         contactList.add(contact);
         System.out.println("Contact added");
 
     }
 
     public static ArrayList getContactList() {
+
         return contactList;
     }
 
@@ -40,7 +41,6 @@ public class ContactManagement {
                 System.out.println(contact.getName());
         }
     }
-
 
 
     //Show all
