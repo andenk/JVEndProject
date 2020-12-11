@@ -4,7 +4,7 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.example.Contact.Contact;
-import org.example.ContactManagement.ContactManagement;
+import org.example.contactmanagement.ContactManagement;
 import org.junit.Test;
 
 import java.util.ArrayList;

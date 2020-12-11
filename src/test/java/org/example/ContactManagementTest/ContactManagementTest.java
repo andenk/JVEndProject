@@ -1,7 +1,7 @@
 package org.example.ContactManagementTest;
 
 import org.example.Contact.Contact;
-import org.example.ContactManagement.ContactManagement;
+import org.example.contactmanagement.ContactManagement;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;

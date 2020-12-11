@@ -11,7 +11,7 @@ package org.example.Main;
  * ContactManagement.metodnamn
  **/
 
-import org.example.ContactManagement.ContactManagement;
+import org.example.contactmanagement.ContactManagement;
 
 import java.util.Scanner;
 
