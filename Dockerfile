@@ -2,7 +2,7 @@ FROM openjdk:11
 COPY ./src/main/java/org/example/Main/ContactBook/ / 
 COPY ./src/main/java/org/example/Main/ /
 COPY ./src/main/java/org/example/Contact/ / 
-COPY ./src/main/java/org/example/contactmanagement/ /  
+COPY ./src/main/java/org/example/ContactManagement/ /  
 RUN javac java_Read_File.java
 RUN javac java_Read_File.java
 RUN javac java_Read_File.java
