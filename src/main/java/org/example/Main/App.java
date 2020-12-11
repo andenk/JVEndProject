@@ -26,19 +26,18 @@ public class App
         boolean run = true;
         Scanner myObj = new Scanner(System.in);
 
-
-        System.out.println(
-                "1: Visa kontakter\n" +
-                        "2: Sök bland kontakter\n" +
-                        "3: Lägg till kontakt\n" +
-                        "4: Ta bort kontakt\n" +
-                        "5: Uppdatera nummer\n" +
-                        "6: Uppdatera namn\n" +
-                        "0: Avsuta\n");
+        printMenu();
 
         while(run) {
-            int userChoice = myObj.nextInt();
-            myObj.nextLine();
+
+            String input = myObj.next();
+            int userChoice = 0;
+            try {
+                userChoice = Integer.parseInt(input);
+            } catch (NumberFormatException ne) {
+                System.out.println("Mata endast in siffror!");
+            }
+
             switch (userChoice) {
                 case 0:
                     run = false;
@@ -64,8 +63,21 @@ public class App
                 default:
                     System.out.println("Prova igen");
             }
-        }
+            printMenu();
 
+        }
+    }
+
+    private static void printMenu() {
+        System.out.println("-------------------\n" +
+                "1: Visa kontakter\n" +
+                "2: Sök bland kontakter\n" +
+                "3: Lägg till kontakt\n" +
+                "4: Ta bort kontakt\n" +
+                "5: Uppdatera nummer\n" +
+                "6: Uppdatera namn\n" +
+                "0: Avsuta\n" +
+                "-------------------\n");
     }
 
     private static void searchContacts(){
@@ -112,4 +124,4 @@ public class App
     }
 
 
-}
+} 
