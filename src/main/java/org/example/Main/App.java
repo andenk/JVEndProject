@@ -28,7 +28,7 @@ public class App
 
         printMenu();
 
-        while(run) {
+        while(myObj.hasNext()) {
 
             String input = myObj.next();
             int userChoice = 0;
@@ -40,7 +40,7 @@ public class App
 
             switch (userChoice) {
                 case 0:
-                    run = false;
+                    System.exit(0);
                     break;
                 case 1:
                     contactList.printContactList();
