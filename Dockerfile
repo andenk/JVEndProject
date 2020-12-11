@@ -1,4 +1,3 @@
 FROM openjdk:11
-COPY ./target/  
-RUN javac JVSlutProject-1.0-SNAPSHOT.jar
-CMD ["java","JVSlutProject-1.0-SNAPSHOT"]
+COPY ./target/JVSlutProject-1.0-SNAPSHOT.jar / 
+CMD ["java","jar","JVSlutProject-1.0-SNAPSHOT.jar"]
