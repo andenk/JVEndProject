@@ -1,9 +1,8 @@
-package org.example.ContactManagement;
+package org.example.contactmanagement;
 
 import org.example.Contact.Contact;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -12,7 +11,7 @@ import java.util.List;
  */
 public class ContactManagement {
 
-    private ArrayList<Contact> contactList = new ArrayList();
+    private ArrayList<Contact> contactList = new ArrayList<Contact>();
 
     //add
     public void addContact(String name, String phoneNumber) {
@@ -23,7 +22,7 @@ public class ContactManagement {
 
     }
 
-    public ArrayList getContactList() {
+    public ArrayList<Contact> getContactList() {
 
         return contactList;
     }
