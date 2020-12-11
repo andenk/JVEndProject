@@ -1,7 +1,5 @@
-FROM debian:stretch
-RUN apt update
-RUN apt --yes install openjdk-11-jdk
-COPY src/main/java/org/example/Main/
+FROM openjdk:11
+COPY src/main/java/org/example/Main/App.java \
 RUN javac App.java
 CMD ["java","App"]
 
