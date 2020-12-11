@@ -11,6 +11,7 @@ package org.example.Main;
  * ContactManagement.metodnamn
  **/
 
+
 import org.example.contactmanagement.ContactManagement;
 
 import java.util.Scanner;
@@ -19,7 +20,7 @@ public class App
 {
 
     private static Scanner scanner = new Scanner(System.in);
-    static ContactManagement contactList = new ContactManagement();
+    public static ContactManagement contactList = new ContactManagement();
 
     public static void main(String[] args) {
 
