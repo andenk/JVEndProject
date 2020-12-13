@@ -9,12 +9,7 @@ import java.io.IOException; // Import the IOException class to handle errors
 import java.util.ArrayList;
 import java.util.Scanner; // Import the Scanner class to read text files
 
-/**
- * Filen ska lösa från txt
- * läsa från array
- * skriv till arrayen
- *
- */
+
 public class SimpleFileManagement {
 
     File makeFile = new File("ContactStorage.txt");

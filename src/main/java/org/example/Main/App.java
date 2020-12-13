@@ -1,16 +1,5 @@
 package org.example.Main;
 
-/**
- *This is leone turf
- **/
-
-/**
- * Förklaring på vad som ska matas in
- * scanna in från parametrar från tangenbordet
- * metoder
- * ContactManagement.metodnamn
- **/
-
 
 import org.example.ContactBook.SimpleFileManagement;
 import org.example.contactmanagement.ContactManagement;

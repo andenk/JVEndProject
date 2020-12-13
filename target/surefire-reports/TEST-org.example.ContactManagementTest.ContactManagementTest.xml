@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="sun.java.command" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire5159625918533639353\surefirebooter1885619641874308086.jar C:\Users\Sofie Holden\AppData\Local\Temp\surefire5159625918533639353 2020-12-13T10-54-05_718-jvmRun1 surefire8330183904487263959tmp surefire_012467034654608075861tmp"/>
+    <property name="sun.java.command" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire15963114617424503313\surefirebooter12290748930985239993.jar C:\Users\Sofie Holden\AppData\Local\Temp\surefire15963114617424503313 2020-12-13T16-04-56_534-jvmRun1 surefire2411002676432671146tmp surefire_013038201592559065111tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\test-classes;C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\classes;C:\Users\Sofie Holden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Sofie Holden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire5159625918533639353\surefirebooter1885619641874308086.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire15963114617424503313\surefirebooter12290748930985239993.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
@@ -60,8 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.016"/>
-  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
+  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.006"/>
+  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.005"/>
   <testcase name="searchContact_thenVerifyContactIsShown" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="addContacts_thenVerifyContactsAreAdded" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="updateNumber_thenVerifyNumberIsUpdated" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>

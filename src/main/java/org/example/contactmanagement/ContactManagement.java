@@ -7,35 +7,33 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 
-/**
- * Static array
- * Ta in parametrar och skapa objektet contact här
- */
 public class ContactManagement {
 
     private ArrayList<Contact> contactList = new ArrayList<Contact>();
 
+    //method connected to the read/write class
     public void createFile() {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.makeMethod();
     }
 
+    //method connected to the read/write class
     public void deleteFile() {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.deleteMethod();
     }
 
+    //method connected to the read/write class
     public void writeFile() throws FileNotFoundException {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.writeToFileMethod(contactList);
     }
 
+    //method connected to the read/write class
     public void readFile() throws FileNotFoundException {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         contactList = simpleFileManagement.readFromFileMethod();
     }
-
-
 
     //add
     public void addContact(String name, String phoneNumber) {
@@ -43,28 +41,7 @@ public class ContactManagement {
         Contact contact = new Contact(name, phoneNumber);
         contactList.add(contact);
         System.out.println("Contact added");
-
     }
-
-    public ArrayList<Contact> getContactList() {
-
-        return contactList;
-    }
-
-    public void getPhoneNumber(String name){
-        for(Contact contact : contactList){
-            if(contact.getName().equalsIgnoreCase(name))
-                System.out.println(contact.getPhoneNumber());
-        }
-    }
-
-    public void getName(String phoneNumber){
-        for(Contact contact : contactList){
-            if(contact.getPhoneNumber().equalsIgnoreCase(phoneNumber))
-                System.out.println(contact.getName());
-        }
-    }
-
 
     //Show all
     public void printContactList(){
@@ -103,7 +80,6 @@ public class ContactManagement {
         }
     }
 
-
     //Delete
     public void deleteContact(String contactName){
         for(int i = contactList.size() -1; i>= 0; i--){
@@ -114,8 +90,27 @@ public class ContactManagement {
         }
     }
 
+    //Getters
+    public ArrayList<Contact> getContactList() {
 
+        return contactList;
+    }
 
+    //Getters
+    public void getPhoneNumber(String name){
+        for(Contact contact : contactList){
+            if(contact.getName().equalsIgnoreCase(name))
+                System.out.println(contact.getPhoneNumber());
+        }
+    }
+
+    //Getters
+    public void getName(String phoneNumber){
+        for(Contact contact : contactList){
+            if(contact.getPhoneNumber().equalsIgnoreCase(phoneNumber))
+                System.out.println(contact.getName());
+        }
+    }
 
 
 }
