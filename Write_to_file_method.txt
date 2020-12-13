@@ -1,0 +1,15 @@
+public void writeToFileMethod() {
+        try {
+            FileWriter myWriter = new FileWriter("ContactStorage.txt");
+            Contact contact = new Contact();
+            for (Contact str : contactList){
+            myWriter.write((contact.getName() + System.lineSeparator()));
+            myWriter.write((contact.getPhoneNumber() + System.lineSeparator()));
+            } 
+            System.out.println("Successfully wrote to the file.");
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
