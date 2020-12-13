@@ -64,6 +64,7 @@ public class ContactManagement {
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(oldName)){
                 contact.setName(newName);
+                System.out.println("Contact name updated");
             }
         }
     }
@@ -73,6 +74,7 @@ public class ContactManagement {
         for (Contact contact : contactList){
             if(contact.getName().equalsIgnoreCase(name)){
                 contact.setPhoneNumber(newNumber);
+                System.out.println("Contact number updated");
             }
         }
     }

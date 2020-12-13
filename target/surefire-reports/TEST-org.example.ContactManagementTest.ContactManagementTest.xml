@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ContactManagementTest.ContactManagementTest" time="0.018" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ContactManagementTest.ContactManagementTest" time="0.016" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject\target\test-classes;C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject\target\classes;C:\Users\anden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\anden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\test-classes;C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\classes;C:\Users\Sofie Holden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Sofie Holden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,51 +17,51 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="sun.java.command" value="C:\Users\anden\AppData\Local\Temp\surefire16297072538869702789\surefirebooter16314019895465647302.jar C:\Users\anden\AppData\Local\Temp\surefire16297072538869702789 2020-12-11T17-29-19_662-jvmRun1 surefire1323081671020762468tmp surefire_011011537411695939717tmp"/>
+    <property name="sun.java.command" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire5159625918533639353\surefirebooter1885619641874308086.jar C:\Users\Sofie Holden\AppData\Local\Temp\surefire5159625918533639353 2020-12-13T10-54-05_718-jvmRun1 surefire8330183904487263959tmp surefire_012467034654608075861tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject\target\test-classes;C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject\target\classes;C:\Users\anden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\anden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\test-classes;C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\classes;C:\Users\Sofie Holden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Sofie Holden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\anden"/>
+    <property name="user.home" value="C:\Users\Sofie Holden"/>
     <property name="user.language" value="sv"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2020-10-20"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.9"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject"/>
+    <property name="basedir" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\anden\AppData\Local\Temp\surefire16297072538869702789\surefirebooter16314019895465647302.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire5159625918533639353\surefirebooter1885619641874308086.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
-    <property name="user.name" value="anden"/>
+    <property name="user.name" value="Sofie Holden"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.9"/>
-    <property name="localRepository" value="C:\Users\anden\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Sofie Holden\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\anden\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\SOFIEH~1\AppData\Local\Temp\"/>
     <property name="java.version" value="11.0.9"/>
-    <property name="user.dir" value="C:\Users\anden\IdeaProjects\GitLocal\JVSlutProject\JVEndProject"/>
+    <property name="user.dir" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.9\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Maven\apache-maven-3.6.3\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\anden\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\bin;;C:\Program Files\Azure Data Studio\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.9\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Sofie Holden\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.9+7-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.006"/>
-  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.005"/>
+  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.016"/>
+  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="searchContact_thenVerifyContactIsShown" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="addContacts_thenVerifyContactsAreAdded" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="updateNumber_thenVerifyNumberIsUpdated" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>

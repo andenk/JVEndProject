@@ -77,7 +77,7 @@ public class App
                 "4: Ta bort kontakt\n" +
                 "5: Uppdatera nummer\n" +
                 "6: Uppdatera namn\n" +
-                "0: Avsuta\n" +
+                "0: Avsluta\n" +
                 "-------------------\n");
     }
 
