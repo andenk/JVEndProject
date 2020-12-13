@@ -12,7 +12,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
  * skriv till arrayen
  *
  */
-public class java_Read_File {
+public class SimpleFileManagement {
 
     File makeFile = new File("ContactStorage.txt");
     Scanner writeTest = new Scanner(System.in);
