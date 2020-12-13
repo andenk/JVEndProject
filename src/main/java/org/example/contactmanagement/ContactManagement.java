@@ -15,14 +15,24 @@ public class ContactManagement {
 
     private ArrayList<Contact> contactList = new ArrayList<Contact>();
 
-    public void createFile() throws FileNotFoundException {
+    public void createFile() {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.makeMethod();
     }
 
-    public void deleteFile() throws FileNotFoundException {
+    public void deleteFile() {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.deleteMethod();
+    }
+
+    public void writeFile() throws FileNotFoundException {
+        SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
+        simpleFileManagement.writeToFileMethod(contactList);
+    }
+
+    public void readFile() throws FileNotFoundException {
+        SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
+        contactList = simpleFileManagement.readFromFileMethod();
     }
 
 

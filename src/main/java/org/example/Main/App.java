@@ -24,15 +24,13 @@ public class App
     private static Scanner scanner = new Scanner(System.in);
     public static ContactManagement contactList = new ContactManagement();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         boolean run = true;
         Scanner myObj = new Scanner(System.in);
-        try {
-            contactList.createFile();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
+        contactList.createFile();
+        contactList.readFile();
 
         printMenu();
 
@@ -48,6 +46,7 @@ public class App
 
             switch (userChoice) {
                 case 0:
+                    contactList.writeFile();
                     System.exit(0);
                     break;
                 case 1:
