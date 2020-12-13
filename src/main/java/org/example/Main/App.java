@@ -26,7 +26,6 @@ public class App
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        boolean run = true;
         Scanner myObj = new Scanner(System.in);
 
         contactList.createFile();
@@ -67,6 +66,9 @@ public class App
                 case 6:
                     updateName();
                     break;
+                case 7:
+                    contactList.deleteFile();
+                    break;
                 default:
                     System.out.println("Prova igen");
             }
@@ -83,6 +85,7 @@ public class App
                 "4: Ta bort kontakt\n" +
                 "5: Uppdatera nummer\n" +
                 "6: Uppdatera namn\n" +
+                "7: Ta bort alla kontakter och kontaktfilen\n" +
                 "0: Avsluta\n" +
                 "-------------------\n");
     }
