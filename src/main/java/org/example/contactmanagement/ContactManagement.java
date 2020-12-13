@@ -1,7 +1,9 @@
 package org.example.contactmanagement;
 
 import org.example.Contact.Contact;
+import org.example.ContactBook.SimpleFileManagement;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 
@@ -12,6 +14,18 @@ import java.util.ArrayList;
 public class ContactManagement {
 
     private ArrayList<Contact> contactList = new ArrayList<Contact>();
+
+    public void createFile() throws FileNotFoundException {
+        SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
+        simpleFileManagement.makeMethod();
+    }
+
+    public void deleteFile() throws FileNotFoundException {
+        SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
+        simpleFileManagement.deleteMethod();
+    }
+
+
 
     //add
     public void addContact(String name, String phoneNumber) {

@@ -12,8 +12,10 @@ package org.example.Main;
  **/
 
 
+import org.example.ContactBook.SimpleFileManagement;
 import org.example.contactmanagement.ContactManagement;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class App
@@ -26,6 +28,11 @@ public class App
 
         boolean run = true;
         Scanner myObj = new Scanner(System.in);
+        try {
+            contactList.createFile();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         printMenu();
 
@@ -80,6 +87,8 @@ public class App
                 "0: Avsluta\n" +
                 "-------------------\n");
     }
+
+
 
     private static void searchContacts(){
         System.out.print("Input search: ");
