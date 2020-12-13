@@ -1,0 +1,31 @@
+    public void writeToFileMethodTest() throws IOException {
+        File makeFile = new File("writeMethodTest.txt");
+        SimpleFileManagement.makeFile = makeFile;
+        try {
+            if (makeFile.createNewFile()) {
+                System.out.println("File created " + makeFile.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+        
+        ArrayList<Contact> contactList = new ArrayList<Contact>();
+        Contact contact = new Contact("Gustav", "0705678399");
+        contactList.add(contact);
+        
+        try {
+            FileWriter myWriter = new FileWriter("write_ReadMethodTest.txt");
+            for (Contact str : contactList){
+                myWriter.write((str.getName() + System.lineSeparator()));
+                myWriter.write((str.getPhoneNumber() + System.lineSeparator()));
+            }
+            System.out.println("Successfully wrote to the file.");
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
