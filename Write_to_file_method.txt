@@ -13,3 +13,19 @@ public void writeToFileMethod() {
             e.printStackTrace();
         }
     }
+    
+        public void readFromFileMethod(ArrayList<Contact> contactList) {
+            File myObj = new File("ContactStorage.txt");
+            try{
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()){
+                String name = myReader.nextLine();
+                String phoneNumber = myReader.nextLine();
+                Contact contact = new Contact(name, phoneNumber);
+                contactList.add(contact);         
+            }
+            myReader.close();  
+        }catch(IOException e){
+                e.printStackTrace();
+            System.out.println("Error");
+        }
