@@ -12,7 +12,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 public class SimpleFileManagement {
 
-    File makeFile = new File("ContactStorage.txt");
+    static File makeFile = new File("ContactStorage.txt");
     Scanner writeTest = new Scanner(System.in);
 
 
