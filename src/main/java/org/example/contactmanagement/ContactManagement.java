@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class ContactManagement {
 
-    private ArrayList<Contact> contactList = new ArrayList<Contact>();
+    private ArrayList<Contact> contactList = new ArrayList<>();
 
     //method connected to the read/write class
     public void createFile() {
@@ -21,6 +21,11 @@ public class ContactManagement {
     public void deleteFile() {
         SimpleFileManagement simpleFileManagement = new SimpleFileManagement();
         simpleFileManagement.deleteMethod();
+
+        for(int i = contactList.size() -1; i>= 0; i--){
+
+                contactList.remove(i);
+        }
     }
 
     //method connected to the read/write class

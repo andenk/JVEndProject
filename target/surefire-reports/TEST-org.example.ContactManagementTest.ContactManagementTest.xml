@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ContactManagementTest.ContactManagementTest" time="0.016" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ContactManagementTest.ContactManagementTest" time="0.015" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="sun.java.command" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire15963114617424503313\surefirebooter12290748930985239993.jar C:\Users\Sofie Holden\AppData\Local\Temp\surefire15963114617424503313 2020-12-13T16-04-56_534-jvmRun1 surefire2411002676432671146tmp surefire_013038201592559065111tmp"/>
+    <property name="sun.java.command" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire13573178054887894627\surefirebooter1089007701927467122.jar C:\Users\Sofie Holden\AppData\Local\Temp\surefire13573178054887894627 2020-12-13T19-36-35_392-jvmRun1 surefire14248882071922618779tmp surefire_015546808845615428855tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\test-classes;C:\Users\Sofie Holden\JavaverktygProjects\Labbar\Project\target\classes;C:\Users\Sofie Holden\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Sofie Holden\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire15963114617424503313\surefirebooter12290748930985239993.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SOFIEH~1\AppData\Local\Temp\surefire13573178054887894627\surefirebooter1089007701927467122.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
@@ -60,8 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.006"/>
-  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.005"/>
+  <testcase name="deleteContact_thenVerifyContactIsDeleted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.005"/>
+  <testcase name="printContactList_VerifyAllContactsArePrinted" classname="org.example.ContactManagementTest.ContactManagementTest" time="0.004"/>
   <testcase name="searchContact_thenVerifyContactIsShown" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="addContacts_thenVerifyContactsAreAdded" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
   <testcase name="updateNumber_thenVerifyNumberIsUpdated" classname="org.example.ContactManagementTest.ContactManagementTest" time="0"/>
